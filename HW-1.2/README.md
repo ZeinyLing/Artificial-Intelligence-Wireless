@@ -8,6 +8,7 @@ Ex1.5 ~ Ex1.12 （第二周作業）
 - [Ex1.12 Code (PPO_MountainCar-v0.py)](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/blob/main/HW-1.2/PPO_MountainCar-v0.py)
 
 ### 🔗 Results on PPO_MountainCar-v0
-<img src="ex1.12.png" width="900">
+<img src="ex1.12.png" width="200">
+
 
 
