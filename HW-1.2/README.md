@@ -13,8 +13,9 @@ Ex1.5 ~ Ex1.12 （第二周作業）
 pip install -r requirements.txt
 ```
 
-### Results on PPO_MountainCar-v0
+## Results on PPO_MountainCar-v0
 <img src="ex1.12.png" width="200">
+
 
 
 
