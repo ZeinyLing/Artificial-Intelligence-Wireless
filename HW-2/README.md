@@ -11,7 +11,7 @@ Ex2.1 ~ Ex2.2, Ex2.4 （第三周作業）
 ### 🔗 You can Try on Colab
 - [Exercise_2.4_starter.py(Colab)](https://colab.research.google.com/drive/1a0k9C089eRybGK96N5pNZKZs-hkzSF8a?usp=sharing)
 ### 🔗 Figs outputs and checkpoints models
-- [EX2_aiwireless](https://drive.google.com/drive/folders/1mGL7SREM33yxIdhbfxiyX-iHVXlQGSWk?usp=sharing)
+- [EX2_aiwireless ZIPs](https://drive.google.com/drive/folders/1mGL7SREM33yxIdhbfxiyX-iHVXlQGSWk?usp=sharing)
 ### 🔗 The results generated in the last 5000 iterations
 <img src="last5000.png" width="1000">
 
