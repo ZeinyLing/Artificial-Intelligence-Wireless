@@ -10,6 +10,8 @@ Ex2.1 ~ Ex2.2, Ex2.4 （第三周作業）
 - [rayleigh_channel_dataset.mat](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/blob/main/HW-2/rayleigh_channel_dataset.mat)
 ### 🔗 You can Try on Colab
 - [Exercise_2.4_starter.py(Colab)](https://colab.research.google.com/drive/1a0k9C089eRybGK96N5pNZKZs-hkzSF8a?usp=sharing)
+### 🔗 Figs outputs and checkpoints
+- [Exercise_2.4_starter.py(Colab)](https://colab.research.google.com/drive/1a0k9C089eRybGK96N5pNZKZs-hkzSF8a?usp=sharing)
 ### 🔗 The results generated in the last 5000 iterations
 <img src="last5000.png" width="1000">
 
