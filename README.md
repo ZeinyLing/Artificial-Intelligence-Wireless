@@ -9,7 +9,7 @@
 | 第一周 HW-1 | [HW-1](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/blob/main/HW-1/README.md) | Ex1.1 ~ Ex1.4  |
 | 第二周 HW-1.2 | [ HW-1.2](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-1.2) | Ex1.5 ~ Ex1.12 |
 | 第三周 HW-2 | [HW-2](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-2) | Ex2.1 ~ Ex2.2 , Ex2.4  |
-| HW-4 | [HW-4] |  |
+| 第四周 HW-2-2 | [HW-4] | GAN與VAE公式推導 |
 | HW-5 | [HW-5] |  |
 
 
