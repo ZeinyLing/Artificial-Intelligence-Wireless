@@ -24,4 +24,4 @@ pip install -r requirements.txt
 python Exercise_2.4_starter.py
 ```
 ## Results 
-<img src="ex1.12.png" width="200">
+<img src="2-4.png" width="600">
