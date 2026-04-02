@@ -12,4 +12,7 @@ The scripts are configured to simulate the OFDM system with the following parame
 * **Channel Estimators:** DNN-based (multi-layer perceptron) and Linear Minimum Mean Square Error (LMMSE)
 * **Scenarios:** With Cyclic Prefix (CP) for ideal conditions, and without CP to demonstrate inter-symbol interference.
 
+## 🔗 Colab
+- [Exercise_2.7 (Colab)](https://colab.research.google.com/drive/1Q6h3fixTFr-etBfdxJaAgcRIjJ82T4y9?usp=sharing)
+
 
