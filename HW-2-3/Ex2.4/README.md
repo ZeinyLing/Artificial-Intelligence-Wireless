@@ -12,4 +12,8 @@ The script is set up to train a CGAN using a pre-generated dataset of channel co
 *   **Constructed Features:** Received Signal $y$, Conditioning Vector (Pilot/Label info)
 *   **Training Steps:** 750,000 iterations
 
-
+## Requirements
+It must use Python = 3.7 !!!
+```
+pip install -r requirements.txt
+```
