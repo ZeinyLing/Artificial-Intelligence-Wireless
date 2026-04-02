@@ -16,4 +16,4 @@ The scripts are configured to simulate the OFDM system with the following parame
 - [Exercise_2.7 (Colab)](https://colab.research.google.com/drive/1Q6h3fixTFr-etBfdxJaAgcRIjJ82T4y9?usp=sharing)
 
 ## Results
-<img src="Results.png" width="200">
+<img src="Results.png" width="500">
