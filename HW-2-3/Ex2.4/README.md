@@ -17,3 +17,9 @@ It must use Python = 3.7 !!!
 ```
 pip install -r requirements.txt
 ```
+
+## Run Exercise_2.4_starter.py
+- Download  QuaDRiGa_channel_generator.m (https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/edit/main/HW-2-3/Ex2.4/QuaDRiGa_channel_generator.m) first
+```
+python Exercise_2.4_starter.py
+```
