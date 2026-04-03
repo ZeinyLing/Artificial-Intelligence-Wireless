@@ -24,4 +24,5 @@ pip install -r requirements.txt
 python Exercise_2.4_starter.py
 ```
 ## Results 
+The Results is not good, the GAN model didn't learn well.
 <img src="2-4.png" width="800">
