@@ -12,9 +12,26 @@ The scripts are configured to simulate the OFDM system with the following parame
 * **Channel Estimators:** DNN-based (multi-layer perceptron) and Linear Minimum Mean Square Error (LMMSE)
 * **Scenarios:** With Cyclic Prefix (CP) for ideal conditions, and without CP to demonstrate inter-symbol interference.
 
+## Directory Structure
+
+```
+.
+├── main.py               # main
+└── tools/            
+    ├── train.py     
+    ├── tfinterp.py        
+    ├── shrinkage.py       
+    ├── raputil.py        <---- Modified in this task
+    ├── problems.py      
+    ├── networks.py       <---- Modified in this task
+    ├── Pilot_64_mu4.txt 
+    ├── Pilot_32        
+    └── Pilot_64
+```
+
 ## 🔗 Do the task on Colab
-1. Upload tool folder
-2. Put [channel data](https://drive.google.com/file/d/1UuEco52Dc7oBVZQz8Kbc-9FOJv_T8nYY/view?usp=sharing) in tool folder
+1. Upload tools folder
+2. Put [channel data](https://drive.google.com/file/d/1UuEco52Dc7oBVZQz8Kbc-9FOJv_T8nYY/view?usp=sharing) in tools folder
 3. run ce_type = 'dnn'  , test_ce = False and CP_flag = True
 4. run ce_type = 'dnn'  , test_ce = True  and CP_flag = True
 5. run ce_type = 'mmse' , test_ce = True  and CP_flag = True
