@@ -14,12 +14,15 @@ The scripts are configured to simulate the OFDM system with the following parame
 
 ## 🔗 Do the task on Colab
 1. Upload tool folder
-2. run ce_type = 'dnn'  , test_ce = False and CP_flag = True
-3. run ce_type = 'dnn'  , test_ce = True  and CP_flag = True
-4. run ce_type = 'mmse' , test_ce = True  and CP_flag = True
-5. run ce_type = 'dnn'  , test_ce = False and CP_flag = False
-6. run ce_type = 'dnn'  , test_ce = True  and CP_flag = False
-7. run ce_type = 'mmse' , test_ce = True  and CP_flag = False
+2. Put [channel data](https://drive.google.com/file/d/1UuEco52Dc7oBVZQz8Kbc-9FOJv_T8nYY/view?usp=sharing) in tool folder
+3. run ce_type = 'dnn'  , test_ce = False and CP_flag = True
+4. run ce_type = 'dnn'  , test_ce = True  and CP_flag = True
+5. run ce_type = 'mmse' , test_ce = True  and CP_flag = True
+6. run ce_type = 'dnn'  , test_ce = False and CP_flag = False
+7. run ce_type = 'dnn'  , test_ce = True  and CP_flag = False
+8. run ce_type = 'mmse' , test_ce = True  and CP_flag = False
+- After running training and testing would get 4 .mat files (on result file)
+- You could directly upload 4 .mat files and run the plot on colab
 - [Exercise_2.7 (Colab)](https://colab.research.google.com/drive/1Q6h3fixTFr-etBfdxJaAgcRIjJ82T4y9?usp=sharing)
 
 ## Results
