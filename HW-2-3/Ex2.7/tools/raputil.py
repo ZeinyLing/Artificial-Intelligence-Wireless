@@ -303,30 +303,43 @@ def LS_CE(Y,pilotValue,pilotCarriers,K,P,int_opt):
     return H_LS
 
 def MMSE_CE(Y,pilotValue,pilotCarriers,K,P,h,SNR):
+    # 1. SNR 轉為線性尺度
     snr = 10 ** (SNR*0.1)
+    
+    # 2. LS (Least Squares) 先估 pilot 點通道
     index = np.arange(P)
     H_tilde = np.zeros(P, dtype=complex)
     H_tilde[index] = Y[pilotCarriers] / pilotValue[index] 
+
+    # 3. 計算 channel 的 RMS delay spread
     index = np.arange(len(h))
     hh = h.dot(np.conj(h).T) 
     tmp = h *np.conj(h)*index
     r = np.sum(tmp)/hh
     r2 = tmp.dot(index.T) / hh
     tau_rms = (r2 - r**2)**0.5
+
+    # 4. 頻域 correlation 相關係數
     df = 1 / K
     j2pi_tau_df = 1j*2*math.pi*tau_rms*df
     K1 = np.reshape(np.repeat(np.arange(K).T, P),(K,P))
+
+    # 5. 建立 Rhp (data subcarrier vs pilot correlation)
     K2 = np.arange(P)
     for i in range(K-1):
         K2 = np.concatenate((K2,np.arange(P)))
     K2 = np.reshape(K2,(K,P))
     rf = np.ones((K,P),dtype=complex) / (1+j2pi_tau_df*(K1-K2*(K//P)))
+
+    # 6. 建立 Rpp (pilot vs pilot correlation)
     K3 = np.reshape(np.repeat(np.arange(P).T, P),(P,P))
     K4 = np.arange(P)
     for i in range(P-1):
         K4 = np.concatenate((K4,np.arange(P)))
     K4 = np.reshape(K4,(P,P))
     rf2 = np.ones((P,P),dtype=complex) / (1+j2pi_tau_df*(K//P)*(K3-K4))
+
+    # 7. MMSE estimator
     Rhp = rf
     Rpp = rf2 + np.eye(len(H_tilde)) / snr
     W_MMSE = Rhp.dot(np.linalg.inv(Rpp))
