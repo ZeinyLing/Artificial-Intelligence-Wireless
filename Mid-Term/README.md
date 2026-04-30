@@ -169,8 +169,8 @@ After conversion, the directory structure becomes:
     └── D6_raw.mat
 ```
 ---
-
-
+<img src="./img/Frequency-Domain CSI Magnitude Responses across Datasets D1~D6.png" width="500">
+<img src="Average CSI Magnitude Heatmaps across Datasets D1~D6.png" width="500">
 ---
 
 ## CsiNet and CS-CsiNet Performance Comparison
