@@ -1,6 +1,6 @@
 # Exercise 2.15: CSI Compression and Reconstruction using CsiNet and CS-CsiNet
 
-## Dataset Preparation and Directory Structure
+## 快速使用說明
 
 ## Notebook Implementation
 
