@@ -2,6 +2,50 @@
 
 ## Dataset Preparation and Directory Structure
 
+## Notebook Implementation
+
+The above code has been organized and executed in the following notebook:
+
+```text
+CsiNet_and_CS_CsiNet.ipynb
+```
+
+The notebook includes the complete workflow:
+
+1. CSI average magnitude visualization
+2. Frequency response signals visualization
+3. CsiNet model training and testing
+4. CS-CsiNet model training and testing
+5. Mixed-trained CsiNet
+6. Mixed-trained CS-CsiNet
+
+## Original Reference Code Files
+
+The original CsiNet and CS-CsiNet implementation includes the following files:
+
+```text
+CsiNet_train.py
+CsiNet_onlytest.py
+CS-CsiNet_train.py
+CS-CsiNet_onlytest.py
+```
+
+In this work, the training and testing procedures were reorganized into a Colab / Jupyter notebook format for easier execution and comparison.
+
+## Dataset Download
+
+The COST2100 channel model can be downloaded from the official GitHub repository:
+
+```text
+https://github.com/cost2100/cost2100
+```
+
+After downloading the repository, place the following MATLAB scripts inside the `cost2100-master/` directory:
+
+```text
+generate_D1_to_D6_raw.m
+convert_D1_to_D6_to_csinet.m
+```
 This exercise uses the COST2100 channel model to generate six different CSI datasets for evaluating CsiNet and CS-CsiNet. First, download the COST2100 official repository from:
 
 ```text
