@@ -1,7 +1,6 @@
 # Extra Credit: Architectural Innovation  
-## Proposed Method: DA-TCsiNet
 
----
+## Proposed Method: DA-TCsiNet
 
 ## 1. Architecture Design
 
