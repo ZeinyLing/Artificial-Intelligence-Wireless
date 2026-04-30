@@ -178,5 +178,6 @@ Mixed-trained CsiNet achieves lower NMSE on all six datasets, showing that mixed
 | D6 | -9.9710 | **-13.2906** | 0.1604 | **0.1688** |
 
 Mixed-trained CS-CsiNet also improves NMSE on all datasets. This indicates that training on diverse channel distributions helps the decoder learn more general CSI reconstruction patterns, even when the encoder is a fixed random projection.
+
 ---
 
