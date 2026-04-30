@@ -12,6 +12,21 @@ After downloading the repository, place the MATLAB scripts `generate_D1_to_D6_ra
 
 ---
 
+## Dataset Settings
+
+**Table 1. Dataset Settings under Different User Distributions and Channel Scenarios**
+
+| Dataset | Network | Scenario | User distribution |
+|---|---|---|---|
+| D1 | `Indoor_CloselySpacedUser_2_6GHz` | LOS | Closely-spaced users |
+| D2 | `Indoor_CloselySpacedUser_2_6GHz` | LOS | Center-clustered |
+| D3 | `Indoor_CloselySpacedUser_2_6GHz` | LOS | Spread / edge users |
+| D4 | `SemiUrban_CloselySpacedUser_2_6GHz` | LOS | Closely-spaced users |
+| D5 | `SemiUrban_CloselySpacedUser_2_6GHz` | LOS | Well-separated users |
+| D6 | `SemiUrban_CloselySpacedUser_2_6GHz` | NLOS | Well-separated users |
+
+---
+
 ## Step 1: Generate Raw COST2100 Channel Data
 
 Run the following MATLAB script:
@@ -113,7 +128,56 @@ After conversion, the directory structure becomes:
     ├── D5_raw.mat
     └── D6_raw.mat
 ```
+---
 
+## CsiNet and CS-CsiNet Performance Comparison
+
+**Table 2. Comparison Results between CsiNet and CS-CsiNet**
+
+| Dataset | CsiNet NMSE dB | CsiNet Corr. | CS-CsiNet NMSE dB | CS-CsiNet Corr. |
+|---|---:|---:|---:|---:|
+| D1 | -14.5340 | 0.1563 | **-15.3053** | 0.1502 |
+| D2 | -13.2373 | 0.1355 | **-14.8795** | **0.1366** |
+| D3 | **-13.3436** | 0.1293 | -13.1215 | **0.1296** |
+| D4 | **-17.3088** | 0.1120 | -16.5968 | **0.1269** |
+| D5 | -10.9518 | 0.1634 | **-12.6152** | **0.1638** |
+| D6 | -8.6231 | 0.1602 | **-9.9710** | **0.1604** |
+
+**Note:** NMSE dB is lower-is-better, while correlation is higher-is-better.
+
+---
+
+## Single-Domain vs Mixed-Dataset CsiNet Training
+
+**Table 3. Comparison Results between Single-Domain and Mixed-Trained CsiNet**
+
+| Dataset | Single-domain CsiNet NMSE dB | Mixed-trained CsiNet NMSE dB | Single Corr. | Mixed Corr. |
+|---|---:|---:|---:|---:|
+| D1 | -14.5340 | **-19.1995** | **0.1563** | 0.1503 |
+| D2 | -13.2373 | **-18.3595** | **0.1355** | 0.1342 |
+| D3 | -13.3436 | **-19.4212** | **0.1293** | 0.1273 |
+| D4 | -17.3088 | **-19.6350** | **0.1120** | 0.1107 |
+| D5 | -10.9518 | **-15.3630** | **0.1634** | 0.1606 |
+| D6 | -8.6231 | **-12.0599** | 0.1602 | **0.1637** |
+
+Mixed-trained CsiNet achieves lower NMSE on all six datasets, showing that mixed-dataset training improves CSI reconstruction accuracy and generalization across different channel scenarios.
+
+---
+
+## Single-Domain vs Mixed-Dataset CS-CsiNet Training
+
+**Table 4. Comparison Results between Single-Domain and Mixed-Trained CS-CsiNet**
+
+| Dataset | Single-domain CS-CsiNet NMSE dB | Mixed-trained CS-CsiNet NMSE dB | Single Corr. | Mixed Corr. |
+|---|---:|---:|---:|---:|
+| D1 | -15.3053 | **-18.4032** | 0.1502 | **0.1519** |
+| D2 | -14.8795 | **-18.3971** | 0.1366 | **0.1372** |
+| D3 | -13.1215 | **-17.4947** | 0.1296 | **0.1297** |
+| D4 | -16.5968 | **-16.9633** | **0.1269** | 0.1127 |
+| D5 | -12.6152 | **-15.3099** | **0.1638** | 0.1605 |
+| D6 | -9.9710 | **-13.2906** | 0.1604 | **0.1688** |
+
+Mixed-trained CS-CsiNet also improves NMSE on all datasets. This indicates that training on diverse channel distributions helps the decoder learn more general CSI reconstruction patterns, even when the encoder is a fixed random projection.
 ---
 
 ## Dataset Generation Summary
@@ -136,72 +200,3 @@ CsiNet / CS-CsiNet training and testing
 
 In this experiment, D1–D6 represent different user distributions and channel scenarios. D1–D3 are generated under an indoor LOS environment with different user distributions, while D4–D6 are generated under a semi-urban environment, including LOS and NLOS settings. These datasets are used to evaluate how CsiNet and CS-CsiNet perform under different channel conditions.
 
----
-
-## 中文說明
-
-本實驗使用 COST2100 channel model 產生六組 CSI datasets，用於評估 CsiNet 與 CS-CsiNet 的 CSI compression and reconstruction performance。首先需要從 COST2100 官方 GitHub repository 下載程式：
-
-```text
-https://github.com/cost2100/cost2100
-```
-
-下載後，將 `generate_D1_to_D6_raw.m` 與 `convert_D1_to_D6_to_csinet.m` 放入 `cost2100-master/` 目錄下。
-
-### Step 1：產生 COST2100 raw channel data
-
-先在 MATLAB 中執行：
-
-```matlab
-generate_D1_to_D6_raw
-```
-
-此程式會產生六組 raw channel datasets，分別為：
-
-```text
-D1_raw.mat
-D2_raw.mat
-D3_raw.mat
-D4_raw.mat
-D5_raw.mat
-D6_raw.mat
-```
-
-這些 raw files 會儲存 COST2100 產生的原始 channel response，例如 `H_transfer`、`H_norm`、user positions、user velocities、scenario settings 與相關 channel parameters。
-
-### Step 2：轉換為 CsiNet / CS-CsiNet 可使用格式
-
-接著執行：
-
-```matlab
-convert_D1_to_D6_to_csinet
-```
-
-此程式會將 `D1_raw.mat` 到 `D6_raw.mat` 轉換成 CsiNet 與 CS-CsiNet 所需的資料格式。轉換過程會將 complex CSI matrix 分成 real part 與 imaginary part，進行 normalization，reshape 成 `32 × 32 × 2` 的 CSI image，最後 flatten 成 `2048` 維向量。
-
-每組 dataset 會被切分成：
-
-| File Name | 說明 |
-|---|---|
-| `DATA_Htrainin.mat` | Training data |
-| `DATA_Hvalin.mat` | Validation data |
-| `DATA_Htestin.mat` | Testing data |
-| `DATA_HtestFin_all.mat` | Frequency-domain test CSI，用於 correlation 評估 |
-
-簡單來說，本實驗的資料產生流程為：
-
-```text
-COST2100 official repository
-        ↓
-generate_D1_to_D6_raw.m
-        ↓
-D1_raw.mat ~ D6_raw.mat
-        ↓
-convert_D1_to_D6_to_csinet.m
-        ↓
-data_D1 ~ data_D6
-        ↓
-CsiNet / CS-CsiNet training and testing
-```
-
-這樣即可將 COST2100 產生的 raw channel data 轉換成 CsiNet 與 CS-CsiNet 可以直接讀取的 `.mat` 資料格式。
