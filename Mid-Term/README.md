@@ -30,7 +30,7 @@ convert_D1_to_D6_to_csinet.m
 └── cost2100-master/
     ├── convert_D1_to_D6_to_csinet.m
     ├── generate_D1_to_D6_raw.m
-    ├── data_D1/
+    └── data_D1/
         ├── DATA_HtestFin_all.mat 
         ├── DATA_Htestin.mat
         ├── DATA_Htrainin.mat
