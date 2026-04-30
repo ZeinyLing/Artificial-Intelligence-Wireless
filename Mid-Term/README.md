@@ -2,9 +2,17 @@
 
 ## 快速使用說明
 
-## Notebook Implementation
-
 已經將original CsiNet and CS-CsiNet code 整理成 CsiNet_and_CS_CsiNet.ipynb 可以直接跑 並包括以下6點
+1. CSI average magnitude visualization
+2. Frequency response signals visualization
+3. CsiNet model training and testing
+4. CS-CsiNet model training and testing
+5. Mixed-trained CsiNet
+6. Mixed-trained CS-CsiNet
+
+資料集部分，
+
+## Notebook Implementation
 
 The above code has been organized and executed in the following notebook:
 
