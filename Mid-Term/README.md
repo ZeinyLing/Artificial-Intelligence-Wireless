@@ -169,8 +169,12 @@ After conversion, the directory structure becomes:
     └── D6_raw.mat
 ```
 ---
-<img src="./img/Frequency-Domain CSI Magnitude Responses across Datasets D1~D6.png" width="1000">
-<img src="./img/Average CSI Magnitude Heatmaps across Datasets D1~D6.png" width="1000">
+
+### Frequency-Domain CSI Magnitude Responses across Datasets D1~D6.png
+<img src="./img/Frequency-Domain CSI Magnitude Responses across Datasets D1~D6.png" width="800">
+
+### Average CSI Magnitude Heatmaps across Datasets D1~D6
+<img src="./img/Average CSI Magnitude Heatmaps across Datasets D1~D6.png" width="800">
 ---
 
 ## CsiNet and CS-CsiNet Performance Comparison
