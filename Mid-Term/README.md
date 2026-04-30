@@ -34,6 +34,8 @@ In this work, the training and testing procedures were reorganized into a Colab 
 
 ## Dataset Download
 
+Save in Cloud : [data]{}
+
 The COST2100 channel model can be downloaded from the official GitHub repository:
 
 ```text
@@ -47,12 +49,6 @@ generate_D1_to_D6_raw.m
 convert_D1_to_D6_to_csinet.m
 ```
 This exercise uses the COST2100 channel model to generate six different CSI datasets for evaluating CsiNet and CS-CsiNet. First, download the COST2100 official repository from:
-
-```text
-https://github.com/cost2100/cost2100
-```
-
-After downloading the repository, place the MATLAB scripts `generate_D1_to_D6_raw.m` and `convert_D1_to_D6_to_csinet.m` under the `cost2100-master/` directory.
 
 ---
 
