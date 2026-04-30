@@ -180,23 +180,3 @@ Mixed-trained CsiNet achieves lower NMSE on all six datasets, showing that mixed
 Mixed-trained CS-CsiNet also improves NMSE on all datasets. This indicates that training on diverse channel distributions helps the decoder learn more general CSI reconstruction patterns, even when the encoder is a fixed random projection.
 ---
 
-## Dataset Generation Summary
-
-The full data preparation flow is:
-
-```text
-COST2100 official repository
-        ↓
-generate_D1_to_D6_raw.m
-        ↓
-D1_raw.mat ~ D6_raw.mat
-        ↓
-convert_D1_to_D6_to_csinet.m
-        ↓
-data_D1 ~ data_D6
-        ↓
-CsiNet / CS-CsiNet training and testing
-```
-
-In this experiment, D1–D6 represent different user distributions and channel scenarios. D1–D3 are generated under an indoor LOS environment with different user distributions, while D4–D6 are generated under a semi-urban environment, including LOS and NLOS settings. These datasets are used to evaluate how CsiNet and CS-CsiNet perform under different channel conditions.
-
