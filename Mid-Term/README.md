@@ -4,6 +4,7 @@
 
 ## Notebook Implementation
 
+已經將original CsiNet and CS-CsiNet code 整理成 CsiNet_and_CS_CsiNet.ipynb 可以直接跑 並包括以下6點
 The above code has been organized and executed in the following notebook:
 
 ```text
