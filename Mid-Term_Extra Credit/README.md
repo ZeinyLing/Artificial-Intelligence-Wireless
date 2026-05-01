@@ -1,6 +1,6 @@
 # Extra Credit: Architectural Innovation  
 
-已經將original CsiNet and CS-CsiNet code 整理成 CsiNet_and_CS_CsiNet.ipynb 可以直接跑 並包括以下6點
+Extra Credit DA-TCsiNet.ipynb 並包括以下5點
 1. DATA Processing from D6
 2. CsiNet-LSTM
 3. DA-TCsiNet (FULL)
