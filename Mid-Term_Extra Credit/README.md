@@ -1,7 +1,7 @@
 # Extra Credit: Architectural Innovation  
 
 已經將original CsiNet and CS-CsiNet code 整理成 CsiNet_and_CS_CsiNet.ipynb 可以直接跑 並包括以下6點
-1. CSI average magnitude visualization
+1. DATA Processing from D6
 2. Frequency response signals visualization
 3. CsiNet model training and testing
 4. CS-CsiNet model training and testing
