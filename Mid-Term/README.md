@@ -10,7 +10,7 @@
 5. Mixed-trained CsiNet
 6. Mixed-trained CS-CsiNet
 
-資料集部分，因容量太大放置雲端: [下載](https://drive.google.com/drive/folders/19CI5paZU2WfIJkCdzJPQuQ1JGN4D3ee9?usp=sharing)
+資料集部分，因容量太大放置雲端: [Mid-Term data](https://drive.google.com/drive/folders/19CI5paZU2WfIJkCdzJPQuQ1JGN4D3ee9?usp=sharing)
 
 ## Notebook Implementation
 
