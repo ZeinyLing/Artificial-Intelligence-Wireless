@@ -2,19 +2,18 @@
 
 已經將original CsiNet and CS-CsiNet code 整理成 CsiNet_and_CS_CsiNet.ipynb 可以直接跑 並包括以下6點
 1. DATA Processing from D6
-2. Frequency response signals visualization
-3. CsiNet model training and testing
-4. CS-CsiNet model training and testing
-5. Mixed-trained CsiNet
-6. Mixed-trained CS-CsiNet
+2. CsiNet-LSTM
+3. DA-TCsiNet (FULL)
+4. Ablation Studies -1 without Doppler-aware Delta Gate
+5. Ablation Studies -2 without Last-frame Residual Fusion
 
 資料集部分，因容量太大放置雲端: [Mid-Term data](https://drive.google.com/drive/folders/19CI5paZU2WfIJkCdzJPQuQ1JGN4D3ee9?usp=sharing)
 
 會使用到以下資料:
-1. D6_temporal
+1. D6_raw.mat
+2. D6_temporal/ (此資料夾為D6_raw.mat from DATA Processing from D6) 所以直接下載 可不用跑 DATA Processing from D6
    
 只要下載後將 程式中 的各個段落 BASE_DIR 改成 資料夾路徑 即可
-
 
 ## Proposed Method: DA-TCsiNet
 
