@@ -12,6 +12,10 @@
 
 資料集部分，因容量太大放置雲端: [Mid-Term data](https://drive.google.com/drive/folders/19CI5paZU2WfIJkCdzJPQuQ1JGN4D3ee9?usp=sharing)
 
+會使用到以下資料:
+1. D1_raw.mat ~ D6_raw.mat (6份原始檔案)
+2. data_D1/ ~ data_D6/     (6個已從raw切好的資料夾)
+
 ## Notebook Implementation
 
 The above code has been organized and executed in the following notebook:
