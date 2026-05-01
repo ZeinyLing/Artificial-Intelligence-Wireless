@@ -16,7 +16,7 @@
 1. D1_raw.mat ~ D6_raw.mat (6份原始檔案)
 2. data_D1/ ~ data_D6/     (6個已從raw切好的資料夾)
 
-只要下載後將 程式中 的個段落 BASE_DIR 改成 資料夾路徑 即可
+只要下載後將 程式中 的各個段落 BASE_DIR 改成 資料夾路徑 即可
 
 
 ## Notebook Implementation
