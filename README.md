@@ -11,6 +11,8 @@
 | 第三周 HW-2 | [HW-2](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-2) | Ex2.1 ~ Ex2.2 , Ex2.4  |
 | 第四周 HW-2-2 | [HW-2-2] | GAN與VAE公式推導 |
 | 第五周 HW-2-3 | [HW-2-3](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-2-3) | Ex2.4 , Ex2.7 |
+| 第五周 HW-2-3 | [HW-2-3](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/Mid-Term) | Mid-Term |
+| 第五周 HW-2-3 | [HW-2-3](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/Mid-Term_Extra Credit) | Extra Credit |
 
 
 
