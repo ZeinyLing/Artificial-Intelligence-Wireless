@@ -11,8 +11,10 @@
 | **Observe** | The console will output the testing BER. You should manually record these values to plot BER vs. SNR curves and compare the performance differences in your report. |
 
 ## Task (b)
-<img src="./imgs/b.png" width="500">
+<img src="./imgs/b.png" width="600">
+
 ## Task (c)
-<img src="./imgs/c.png" width="500">
+<img src="./imgs/c.png" width="600">
+
 ## Task (d)
-<img src="./imgs/d.png" width="500">
+<img src="./imgs/d.png" width="600">
