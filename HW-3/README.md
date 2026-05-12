@@ -12,7 +12,7 @@
 
 ## 快速使用說明
 
-已經將Train跟Test整合
+已經將Train跟Test整合成pytorch版本，並分成3個py檔案
 
 ### Dependencies
 
