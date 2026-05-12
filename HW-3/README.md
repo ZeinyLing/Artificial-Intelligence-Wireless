@@ -32,6 +32,8 @@ cd DNN_Detection
 
 ```bash
 python task_b.py
+
+python inference_task_b.py
 ```
 
 ### Results
@@ -42,6 +44,8 @@ python task_b.py
 
 ```bash
 python task_c.py
+
+python inference_task_c.py
 ```
 
 ### Results
@@ -52,6 +56,8 @@ python task_c.py
 
 ```bash
 python task_d.py
+
+python inference_task_d.py
 ```
 
 ### Results
