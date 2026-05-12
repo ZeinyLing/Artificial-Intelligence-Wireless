@@ -1,6 +1,6 @@
 # Exercise 3.1: Learning-based Signal Detection for OFDM Systems
 
-## Task
+## Tasks
 
 | Checklist | Details |
 |-----------|---------|
@@ -9,3 +9,9 @@
 | **Task (d)** | Revert to QPSK (`mu = 2`). Implement a **single large DNN**: <br> • Open `main.py` and set `config.pred_range = np.arange(0, 128)`. <br> • Open `Train.py` and set `n_output = 128`. <br> • Increase `n_hidden_1`, `n_hidden_2`, etc., in `Train.py` to give the network enough capacity. |
 | **Run** | Execute: `python main.py` for each specific configuration. |
 | **Observe** | The console will output the testing BER. You should manually record these values to plot BER vs. SNR curves and compare the performance differences in your report. |
+
+## Task (b)
+
+## Task (c)
+
+## Task (d)
