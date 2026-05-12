@@ -31,35 +31,35 @@ cd DNN_Detection
 ## Task (b)
 
 ```bash
-python task_b.py
+python task_b.py           # have inference in code
 
-python inference_task_b.py
+python inference_task_b.py # just inference
 ```
 
 ### Results
 
-<img src="./imgs/b.png" width="600">
+<img src="./imgs/b.png" width="700">
 
 ## Task (c)
 
 ```bash
-python task_c.py
+python task_c.py            # have inference in code
 
-python inference_task_c.py
+python inference_task_c.py  # just inference
 ```
 
 ### Results
 
-<img src="./imgs/c.png" width="600">
+<img src="./imgs/c.png" width="700">
 
 ## Task (d)
 
 ```bash
-python task_d.py
+python task_d.py            # have inference in code
 
-python inference_task_d.py
+python inference_task_d.py  # just inference
 ```
 
 ### Results
 
-<img src="./imgs/d.png" width="600">
+<img src="./imgs/d.png" width="700">
