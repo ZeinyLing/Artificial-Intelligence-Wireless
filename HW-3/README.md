@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Task (b)
 
 ```bash
-pip install -r requirements.txt
+python task_b.py
 ```
 
 ### Results
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ## Task (c)
 
 ```bash
-pip install -r requirements.txt
+python task_c.py
 ```
 
 ### Results
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ## Task (d)
 
 ```bash
-pip install -r requirements.txt
+python task_d.py
 ```
 
 ### Results
