@@ -14,6 +14,10 @@
 
 已經將Train跟Test整合成pytorch版本，並分成3個py檔案
 
+* task_b.py
+* task_c.py
+* task_d.py
+
 ### Dependencies
 requirements
 ```bash
