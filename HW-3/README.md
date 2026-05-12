@@ -14,6 +14,13 @@
 
 已經將Train跟Test整合
 
+### Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## Task (b)
 
 ### Results
