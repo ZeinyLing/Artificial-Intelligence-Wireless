@@ -23,17 +23,29 @@ pip install -r requirements.txt
 
 ## Task (b)
 
+```bash
+pip install -r requirements.txt
+```
+
 ### Results
 
 <img src="./imgs/b.png" width="600">
 
 ## Task (c)
 
+```bash
+pip install -r requirements.txt
+```
+
 ### Results
 
 <img src="./imgs/c.png" width="600">
 
 ## Task (d)
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Results
 
