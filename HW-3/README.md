@@ -12,15 +12,18 @@
 
 ## Task (b)
 
-Results
+### Results
+
 <img src="./imgs/b.png" width="600">
 
 ## Task (c)
 
-Results
+### Results
+
 <img src="./imgs/c.png" width="600">
 
 ## Task (d)
 
-Results
+### Results
+
 <img src="./imgs/d.png" width="600">
