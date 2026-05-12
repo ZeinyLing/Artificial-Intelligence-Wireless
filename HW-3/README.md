@@ -10,6 +10,10 @@
 | **Run** | Execute: `python main.py` for each specific configuration. |
 | **Observe** | The console will output the testing BER. You should manually record these values to plot BER vs. SNR curves and compare the performance differences in your report. |
 
+## 快速使用說明
+
+已經將Train跟Test整合
+
 ## Task (b)
 
 ### Results
