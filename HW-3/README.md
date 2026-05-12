@@ -19,11 +19,11 @@
 * task_d.py
 
 ### Dependencies
-requirements
+Requirements
 ```bash
 pip install -r requirements.txt
 ```
-
+Root Folder
 ```bash
 cd DNN_Detection
 ```
