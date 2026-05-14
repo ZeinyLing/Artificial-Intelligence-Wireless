@@ -13,12 +13,7 @@
 | 第五周 HW-2-3 | [HW-2-3](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-2-3) | Ex2.4 , Ex2.7 |
 | Mid-Term | [Mid-Term](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/Mid-Term) | Mid-Term |
 | Mid-Term | [Extra Credit](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/Mid-Term_Extra%20Credit) | Extra Credit |
-| 第十一周 HW-3-1 |  | Ex3.1 - Ex3.3 |
-
-
-
-
-
+| 第十一周 HW-3 | [HW3](https://github.com/ZeinyLing/Artificial-Intelligence-Wireless/tree/main/HW-3) | Ex3.1 - Ex3.3 |
 
 
 
